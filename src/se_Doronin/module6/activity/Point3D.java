@@ -1,4 +1,4 @@
-package sef.module6.activity;
+package se_Doronin.module6.activity;
 /**
  * @author  John Doe
  * 

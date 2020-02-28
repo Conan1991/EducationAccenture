@@ -1,4 +1,4 @@
-package sef.module9.activity;
+package se_Doronin.module9.activity;
 
 /**
  * Interfae for RadarContacts

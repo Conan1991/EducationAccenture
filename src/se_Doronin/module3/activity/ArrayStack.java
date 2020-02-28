@@ -1,4 +1,4 @@
-package sef.module3.activity;
+package se_Doronin.module3.activity;
 
 
 /**

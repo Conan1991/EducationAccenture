@@ -1,4 +1,4 @@
-package sef.module7.activity;
+package se_Doronin.module7.activity;
 
 /**
  * An interface representing denominations used by various currencies

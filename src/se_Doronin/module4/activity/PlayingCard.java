@@ -1,4 +1,4 @@
-package sef.module4.activity;
+package se_Doronin.module4.activity;
 
 import java.util.Map;
 
