@@ -31,8 +31,6 @@ public class RadarContactImpl implements RadarContact {
     }
 
     public final void setBearing(double bearing) {
-
-        double temp;
         while (bearing >= 360) {
             bearing -= 360.0;
         }
@@ -40,8 +38,6 @@ public class RadarContactImpl implements RadarContact {
             bearing = 360 + bearing;
         }
         this.bearing = bearing;
-
-
     }
 
     public final double getDistance() {
@@ -61,7 +57,6 @@ public class RadarContactImpl implements RadarContact {
     }
 
     public final void setContactID(String contactID) {
-
         this.contactID = contactID;
     }
 

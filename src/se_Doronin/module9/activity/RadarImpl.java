@@ -12,7 +12,6 @@ public class RadarImpl implements Radar {
 
     List<RadarContact> contacts;
 
-
     /**
      * Constructs a new Radar
      */
@@ -54,6 +53,4 @@ public class RadarImpl implements Radar {
         List<RadarContact> list = new ArrayList<>(contacts);
         return list;
     }
-
-
 }
