@@ -1,27 +1,23 @@
 package se_Doronin.module11.activity;
 
-import java.io.*;
-import java.nio.file.FileSystems;
-import java.util.Scanner;
-
 public class Client {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		TextEditor editor = new Notepad(args[0]);
-		editor.typeIn();
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
 
-		Scanner scanner = new Scanner(System.in);
+        TextEditor editor = new Notepad(args[0]);
+        editor.printAll();
 
-		while (true){
-			String line = scanner.nextLine();
-			if(line.equals("END"))
-				break;
-			editor.saveAs(line);
-		}
-		editor.typeIn();
-	}
+        while (true) {
+            String text = editor.typeIn();
+            if (text.equals("END"))
+                break;
+            editor.saveAs(text);
+        }
+
+
+    }
 }
 

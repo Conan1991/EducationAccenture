@@ -4,6 +4,8 @@ public interface TextEditor {
 	
 	void saveAs(String text);
 	
-	void typeIn();
+	String typeIn();
+
+	void printAll();
 
 }
