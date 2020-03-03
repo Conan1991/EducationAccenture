@@ -34,7 +34,7 @@ public class Chat {
                     break;
                 }
                 String input = in.nextLine();
-                if(input.contains("logout")) {
+                if (input.contains("logout")) {
                     writeToSocket(input);
                     break;
                 }

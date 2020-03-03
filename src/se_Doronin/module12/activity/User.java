@@ -3,13 +3,9 @@ package se_Doronin.module12.activity;
 
 import java.io.*;
 import java.net.Socket;
-import java.util.Scanner;
 
 class User implements Runnable {
-    //Scanner scn = new Scanner(System.in);
-    private String name;
     private int userID;
-
     BufferedReader input;
     PrintWriter printWriter;
 
@@ -23,8 +19,6 @@ class User implements Runnable {
         try {
             printWriter = new PrintWriter(new DataOutputStream(socket.getOutputStream()));
             input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            //dataInputStream = new DataInputStream(socket.getInputStream());
-            //bufferedWriter = new BufferedWriter(dataOutputStream);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -52,7 +46,6 @@ class User implements Runnable {
         while (true) {
             try {
                 // receive the string
-//                if(input.hasNext())
                 received = input.readLine();
                 System.out.println(Thread.currentThread().getName() + " recieve a message " + received);
 
@@ -62,10 +55,10 @@ class User implements Runnable {
                 }
 
                 listener.sendToAll(received, userID);
-                //if (!received.isEmpty())
-                 //   ChatServer.sendToAll(received);
 
-            } catch (IOException e) {  e.printStackTrace(); }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
     }
