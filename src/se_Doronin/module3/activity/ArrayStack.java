@@ -52,6 +52,7 @@ public class ArrayStack {
         if (count >= getMaximum())
             return false;
         stack[count] = element;
+        count++;
         return true;
     }
 
